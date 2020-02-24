@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_main_header"
+        android:layout_marginTop="@dimen/Top_margin"
+        android:padding="@dimen/hor_margin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_home_image"
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:src="@drawable/movie2"
+            android:layout_height="@dimen/banner_height"/>
+
+        <TextView
+            android:id="@+id/txt_home_continue"
+            android:layout_below="@id/img_home_image"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="@dimen/txtbutton_hor_margin"
+            android:layout_marginTop="@dimen/txtbutton_Top_margin"
+            android:layout_marginEnd="@dimen/txtbutton_hor_margin"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="Continue"
+            android:background="@drawable/shapebottomnavigation"
+            android:textColor="#000000"
+            android:gravity="center" />
+
+        <ProgressBar
+            android:id="@+id/loadingPanel"
+            android:visibility="invisible"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/txtbutton_Top_margin"
+            android:layout_below="@id/img_home_image"
+            android:layout_width="@dimen/txtbutton_height"
+            android:layout_height="@dimen/txtbutton_height"
+            android:indeterminate="true" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

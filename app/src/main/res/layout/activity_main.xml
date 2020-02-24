@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rel_main_toolcar"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+            <TextView
+                android:textSize="16sp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/hor_margin"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Movie List"
+                android:layout_alignParentLeft="true"/>
+
+
+        </RelativeLayout>
+
+        <ImageButton
+            android:scaleType="fitXY"
+            android:id="@+id/img_main_slider"
+            android:src="@drawable/movie3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/image_height"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_main_lastnews"
+            android:layout_below="@id/img_main_slider"
+            android:background="@color/gray300"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
