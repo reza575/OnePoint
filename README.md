@@ -3,7 +3,7 @@
 
 # Project Title
 
-A sample Media test app
+A sample test app
 
 ## Getting Started
 
