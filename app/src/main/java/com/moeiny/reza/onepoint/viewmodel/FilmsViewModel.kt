@@ -5,7 +5,7 @@ import android.view.View
 import androidx.lifecycle.AndroidViewModel
 import com.moeiny.reza.deloittest.repository.database.entitiy.CharacterEntity
 import com.moeiny.reza.deloittest.repository.database.entitiy.FilmEntity
-import com.moeiny.reza.onepoint.API.service.FilmsService
+import com.moeiny.reza.onepoint.API.Apiservice.FilmsService
 import com.moeiny.reza.onepoint.model.Character
 import com.moeiny.reza.onepoint.model.Films
 import com.moeiny.reza.onepoint.model.Result
@@ -78,7 +78,7 @@ fun insert(characterEntity: CharacterEntity){
         return allCharactersData
     }
 
-/////////////////////////////////////////////////////////////
+//////////////Calling API methods//////////////////////////////
 
 fun getFilmsInfo(){
 
@@ -95,7 +95,9 @@ fun getFilmsInfo(){
                 characterList = ArrayList<String>()
                 films = result
                 resultList=films.results as ArrayList<Result>
-
+                /*
+                * Save Movie Data in Database
+                */
                 for (i in 0..resultList.size-1) {
                     characterList=resultList[i].characters as ArrayList<String>
 
@@ -146,6 +148,9 @@ fun getFilmsInfo(){
             override fun onSuccess(result: Character) {
                 character = result
                 lock.countDown()
+                /*
+              * Save character Data in Database
+              */
                 var mycharacter = CharacterEntity(id,character.name, character.gender,
                 character.birth_year, character.height, character.mass,
                 character.hair_color, character.skin_color, character.eye_color,

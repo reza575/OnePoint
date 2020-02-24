@@ -1,6 +1,6 @@
 package com.moeiny.reza.onepoint
 
-import com.moeiny.reza.onepoint.API.service.FilmsService
+import com.moeiny.reza.onepoint.API.Apiservice.FilmsService
 import com.moeiny.reza.onepoint.model.Films
 import com.moeiny.reza.onepoint.utils.FilmsCallback
 import org.junit.Assert

@@ -30,7 +30,6 @@ class MainActivity : AppCompatActivity() {
 
     fun loadData(){
 
-
         showList.clear()
         for ( i in 0..filmList.size-1){
             var show= FilmShow(
