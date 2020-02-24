@@ -1,25 +1,15 @@
 package com.moeiny.reza.onepoint.view
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Patterns
-import android.webkit.URLUtil
-import android.widget.ImageView
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.google.gson.Gson
 import com.moeiny.reza.deloittest.repository.database.entitiy.FilmEntity
 import com.moeiny.reza.nfoxsport.adapter.CharacterAdapter
 import com.moeiny.reza.onepoint.R
 import com.moeiny.reza.onepoint.viewmodel.FilmsViewModel
-import org.json.JSONArray
-import java.net.MalformedURLException
-import java.net.URL
-import org.json.JSONObject
-import java.util.*
-import kotlin.collections.ArrayList
 
 
 class ShowActivity : AppCompatActivity() {
