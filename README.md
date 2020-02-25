@@ -29,6 +29,7 @@ It just needs to import to Android Studio 3(Gradle 4) as a kotlin project
 * [Rxjava](https://proandroiddev.com/exploring-rxjava-in-android-e52ed7ef32e2) -Using of Rxjava Library
 * [Retrofit](https://www.vogella.com/tutorials/Retrofit/article.html) -Using of Retrofit Library
 * [MVVM Design](https://www.journaldev.com/20292/android-mvvm-design-pattern) -Using MVVM Patternwith viewModel,lifecycle,DataBinding
+* [MVVM Implementation](https://codingwithmitch.com/blog/getting-started-with-mvvm-android) -implementing MVVM Pattern 
 * [Material Design](https://developer.android.com/guide/topics/ui/look-and-feel) -Using of material design
 * [Unit Test(Mokito Test)](https://www.vogella.com/tutorials/Mockito/article.html) -Using of Mokito Test
 * [UI Test(Espesso)](https://www.vogella.com/tutorials/AndroidTestingEspresso/article.html) -Using of Espresso Test
