@@ -1,4 +1,4 @@
-package com.moeiny.reza.onepoint.adapter
+package com.moeiny.reza.onepoint.view.adapter
 
 import android.content.Context
 import android.content.Intent
@@ -9,7 +9,7 @@ import androidx.databinding.BindingAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.moeiny.reza.onepoint.databinding.FilmBinding
-import com.moeiny.reza.onepoint.model.FilmShow
+import com.moeiny.reza.onepoint.repository.model.FilmShow
 import com.moeiny.reza.onepoint.utils.CustomClickListener
 import com.moeiny.reza.onepoint.view.ShowActivity
 

@@ -6,8 +6,6 @@
     android:id="@+id/rl_statrow_parent"
     xmlns:tools="http://schemas.android.com/tools">
 
-
-
         <TextView
             android:id="@+id/txt_characterrow_name"
             android:layout_alignParentLeft="true"
@@ -15,7 +13,6 @@
             tools:text=""
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
-
 
         <ImageView
             android:id="@+id/img_statrow_line"
@@ -26,6 +23,5 @@
             android:layout_marginStart="15dp"
             android:layout_width="match_parent"
             android:layout_height="1dp"/>
-
 
 </RelativeLayout>

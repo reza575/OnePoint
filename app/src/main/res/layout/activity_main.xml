@@ -25,7 +25,6 @@
                 android:text="Movie List"
                 android:layout_alignParentLeft="true"/>
 
-
         </RelativeLayout>
 
         <ImageButton

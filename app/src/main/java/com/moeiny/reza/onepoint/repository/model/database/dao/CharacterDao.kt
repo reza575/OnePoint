@@ -1,8 +1,7 @@
-package com.moeiny.reza.onepoint.database.dao
+package com.moeiny.reza.onepoint.repository.model.database.dao
 
 import androidx.room.*
 import com.moeiny.reza.deloittest.repository.database.entitiy.CharacterEntity
-import com.moeiny.reza.deloittest.repository.database.entitiy.FilmEntity
 
 @Dao
 interface CharacterDao {

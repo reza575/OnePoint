@@ -11,22 +11,18 @@ import com.moeiny.reza.onepoint.MainActivity
 import com.moeiny.reza.onepoint.R
 import com.moeiny.reza.onepoint.viewmodel.FilmsViewModel
 
-
 class HomeActivity : AppCompatActivity() {
     lateinit var viewModel: FilmsViewModel
-
     lateinit var txt_Continue: TextView
     lateinit var rl_loading: ProgressBar
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
-        setContext(this)
-        viewModel = ViewModelProviders.of(this).get(FilmsViewModel::class.java)
-
-
-        txt_Continue = findViewById(R.id.txt_home_continue)
-        rl_loading = findViewById(R.id.loadingPanel)
+        /*
+       * Initialise views
+        */
+        setViews()
 
         txt_Continue.setOnClickListener {
             setView(rl_loading)
@@ -34,6 +30,13 @@ class HomeActivity : AppCompatActivity() {
             rl_loading.visibility= View.VISIBLE
             viewModel.getFilmsInfo()
         }
+    }
+
+    fun setViews(){
+        setContext(this)
+        viewModel = ViewModelProviders.of(this).get(FilmsViewModel::class.java)
+        txt_Continue = findViewById(R.id.txt_home_continue)
+        rl_loading = findViewById(R.id.loadingPanel)
     }
 
     companion object {

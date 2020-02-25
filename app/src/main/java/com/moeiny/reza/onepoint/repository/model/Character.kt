@@ -1,4 +1,4 @@
-package com.moeiny.reza.onepoint.model
+package com.moeiny.reza.onepoint.repository.model
 
 data class Character(
     val birth_year: String,

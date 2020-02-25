@@ -1,4 +1,4 @@
-package com.moeiny.reza.onepoint.database
+package com.moeiny.reza.onepoint.repository.model.database
 
 import android.content.Context
 import android.os.AsyncTask
@@ -8,8 +8,8 @@ import androidx.room.RoomDatabase
 import androidx.sqlite.db.SupportSQLiteDatabase
 import com.moeiny.reza.deloittest.repository.database.entitiy.CharacterEntity
 import com.moeiny.reza.deloittest.repository.database.entitiy.FilmEntity
-import com.moeiny.reza.onepoint.database.dao.CharacterDao
-import com.moeiny.reza.onepoint.database.dao.FilmDao
+import com.moeiny.reza.onepoint.repository.model.database.dao.CharacterDao
+import com.moeiny.reza.onepoint.repository.model.database.dao.FilmDao
 
 
 @Database(entities = [(FilmEntity::class), (CharacterEntity::class)], version = 1, exportSchema = false)

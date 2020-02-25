@@ -22,13 +22,10 @@ class CharacterAdapter(var context: Context, var characterList:ArrayList<String>
 
     override fun onBindViewHolder(holderCharacter: CharacterViewHolder, position: Int) {
         var characterRow=characterList.get(position)
-
-
         holderCharacter.txtname.setText(characterRow)
 
-
         holderCharacter.parent.setOnClickListener(){
-
+              // we don't need any action when click on view item in this case
         }
     }
 

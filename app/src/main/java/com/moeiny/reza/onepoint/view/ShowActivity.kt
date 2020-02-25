@@ -24,13 +24,20 @@ class ShowActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_show)
+        /*
+        * Initialise views
+       */
         setUpView()
+
+        /*
+         * get the data that passed from film Adapter when clicked on eah film item on MainActivity recyclerView
+        */
         val bundle = intent.extras
         var film_Id = bundle?.getString("filmId")
         var film=viewModel.getFilmsByEposodeId(film_Id!!.toInt())
-        loadData(film)
-    }
 
+        loadData(film)   // assign the views on ShowActivity with specific values
+    }
 
     fun loadData(film:FilmEntity){
         txtTitle.text = film.title
@@ -41,8 +48,14 @@ class ShowActivity : AppCompatActivity() {
 
         var myList= film.characters.substring(1,film.characters.length-1)
 
+        /*
+        * Split All the character item  from String valye to an String Array
+        */
         var result: List<String> = myList.split(",").map { it.trim() }
 
+        /*
+        * Extract the names of Character to show on character recyclerView
+        */
         val items = ArrayList<String>()
         for(i in 0..result.size-1){
             var name=result.get(i)
@@ -51,7 +64,7 @@ class ShowActivity : AppCompatActivity() {
             items.add(viewModel.getCharacterById(id).name)
         }
 
-        setDataOnRecycler(items)
+        setDataOnRecycler(items) // show the names of Characters of movie that clicked on MainActivity recyclerView
     }
 
     fun setDataOnRecycler(items:ArrayList<String>) {
@@ -68,5 +81,4 @@ class ShowActivity : AppCompatActivity() {
         recyclerView = findViewById(R.id.rv_showactivity_characters)
         recyclerView.layoutManager = LinearLayoutManager(this)
     }
-
 }

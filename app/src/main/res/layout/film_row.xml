@@ -6,7 +6,7 @@
     <data class="FilmBinding">
         <variable
             name="filmshow"
-            type="com.moeiny.reza.onepoint.model.FilmShow"/>
+            type="com.moeiny.reza.onepoint.repository.model.FilmShow"/>
         <variable
             name="itemClickListener"
             type="com.moeiny.reza.onepoint.utils.CustomClickListener"/>
@@ -18,7 +18,6 @@
     android:id="@+id/card_photorow_parent"
     android:layout_margin="@dimen/recycler_item_margin"
     android:layout_height="wrap_content">
-
 
         <LinearLayout
             android:id="@+id/rl_photorow_header"
@@ -68,7 +67,6 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
 
-
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -94,13 +92,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
 
-
                 </RelativeLayout>
 
-
             </RelativeLayout>
-
-
 
         </LinearLayout>
 
